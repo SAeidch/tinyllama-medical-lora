@@ -1,0 +1,9 @@
+# Install PyTorch FIRST with the command from https://pytorch.org/get-started/locally/
+# (choose Windows / Pip / your CUDA version). A plain "pip install torch" on Windows gives a
+# CPU-only build, which is far too slow for training.
+transformers
+peft
+datasets
+accelerate
+rouge-score
+bert-score

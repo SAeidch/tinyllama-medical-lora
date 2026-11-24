@@ -1,0 +1,44 @@
+# ---- Secrets: never commit ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets*.json
+credentials*.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# ---- Training / evaluation outputs (adapters, checkpoints, cached splits, results) ----
+runs/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+wandb/
+
+# ---- Run-time logs (contain full API responses) ----
+agent_log.txt
+*.log
+
+# ---- Reports and office files (keep graded write-ups out of the repo) ----
+*.docx
+*.pptx
+*.xlsx
+~$*
+
+# ---- OS / editor / sync clutter ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
